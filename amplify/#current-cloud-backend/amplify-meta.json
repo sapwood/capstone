@@ -1,0 +1,72 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-herdnerdz-dev-e6a3e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725480003:role/amplify-herdnerdz-dev-e6a3e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725480003:role/amplify-herdnerdz-dev-e6a3e-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-herdnerdz-dev-e6a3e-deployment",
+      "UnauthRoleName": "amplify-herdnerdz-dev-e6a3e-unauthRole",
+      "StackName": "amplify-herdnerdz-dev-e6a3e",
+      "StackId": "arn:aws:cloudformation:us-east-1:851725480003:stack/amplify-herdnerdz-dev-e6a3e/302d0ec0-f124-11ee-9399-1289ac0c3071",
+      "AmplifyAppId": "d1s5kw6ltjtm6w"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-herdnerdz-dev-e6a3e-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-04-02T19:31:46.817Z",
+      "output": {},
+      "lastPushDirHash": "RcEkr1EkQO/hF9RHhjI00ttzZsc="
+    }
+  },
+  "auth": {
+    "herdnerdztestauth2cfc6bab": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-herdnerdz-dev-e6a3e-deployment/amplify-cfn-templates/auth/herdnerdztestauth2cfc6bab-cloudformation-template.json",
+        "logicalId": "authherdnerdztestauth2cfc6bab"
+      },
+      "lastPushTimeStamp": "2024-04-02T19:31:47.405Z",
+      "output": {
+        "UserPoolId": "us-east-1_elyU3YiTf",
+        "AppClientIDWeb": "v58tchbh9k17snrjr8sunbes9",
+        "AppClientID": "6qdl2f2i3ij7uiv3pgvbv8nmne",
+        "IdentityPoolId": "us-east-1:69fb6339-6507-4566-831f-666f8983b0e6",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:851725480003:userpool/us-east-1_elyU3YiTf",
+        "IdentityPoolName": "herdnerdztestauth2cfc6bab_identitypool_2cfc6bab__dev",
+        "UserPoolName": "herdnerdztestauth2cfc6bab_userpool_2cfc6bab"
+      },
+      "lastPushDirHash": "nFI4mNByW4WY0PlPO9C6H2VlDwg="
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-herdnerdz-dev-e6a3e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725480003:role/amplify-herdnerdz-dev-e6a3e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725480003:role/amplify-herdnerdz-dev-e6a3e-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-herdnerdz-dev-e6a3e-deployment",
+      "UnauthRoleName": "amplify-herdnerdz-dev-e6a3e-unauthRole",
+      "StackName": "amplify-herdnerdz-dev-e6a3e",
+      "StackId": "arn:aws:cloudformation:us-east-1:851725480003:stack/amplify-herdnerdz-dev-e6a3e/302d0ec0-f124-11ee-9399-1289ac0c3071",
+      "AmplifyAppId": "d1s5kw6ltjtm6w"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-herdnerdz-dev-e6a3e-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-04-03T13:58:57.929Z",
+      "output": {},
+      "lastPushDirHash": "RcEkr1EkQO/hF9RHhjI00ttzZsc="
+    }
+  },
+  "auth": {
+    "herdnerdztestauthe6b6038c": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
+    }
+  }
+}
